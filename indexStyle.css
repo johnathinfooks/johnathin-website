@@ -15,7 +15,7 @@ li{
 
 .localLink{
 	color: #7d7d7d;
-	font-weight: bold;
+	text-decoration: none;
 }
 .localLink:hover{
 	color: black;
@@ -26,6 +26,7 @@ li{
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+
 }
 
 #leftSelection{
@@ -43,7 +44,6 @@ li{
 }
 
 #johnathinTitle{
-	border: solid darkgray: 0px;
 	border-radius: 5px;
 	margin-left: 10vw;
 	margin-right: 10vw;
@@ -92,4 +92,31 @@ li{
 	width: 130px;
     height: 370px;
     background-position: 75% 46%;
+}
+
+@media (max-width: 1200px){
+	
+	.container {
+		flex-direction: column;
+		gap: 0px;
+	}
+	
+	#leftSelection{
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		font-size: 6vw;
+	}
+
+	#rightSelection{
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		font-size: 6vw;
+	}
+
+	li{
+		letter-spacing: 2px;
+		margin: .1px;
+	}
 }
