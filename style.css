@@ -29,8 +29,8 @@ li{
 #johnathinTitle{
 	border: solid darkgray: 0px;
 	border-radius: 5px;
-	margin: 0 auto;
-	width: 1200px;
+	margin-left: 10vw;
+	margin-right: 10vw;
 	margin-top: 60px;
 	background-image: url("assets/images/newyork.jpg");
 	background-position: 50% 88%;
@@ -39,8 +39,8 @@ li{
 	padding: 20px;
 	text-align: center;
 	font-family: "Marcellus";
-	font-size: 70px;
-	letter-spacing: 40px;
+	font-size: 4vw;
+	letter-spacing: 3vw;
 	color: white;
 	overflow: hidden;
 }
