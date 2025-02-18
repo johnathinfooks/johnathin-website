@@ -1,0 +1,79 @@
+body{
+	background-color: #d9ccc7;
+}
+
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max width: 85vw;
+	width: 100%;
+	padding: 10px;
+}
+
+#leftSelection{}
+
+#rightSelection{}
+
+#johnathinTitle{
+	border: solid darkgray: 0px;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 1200px;
+	margin-top: 60px;
+	background-image: url("assets/images/newyork.jpg");
+	background-position: 50% 88%;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	padding: 20px;
+	text-align: center;
+	font-family: "Marcellus";
+	font-size: 70px;
+	letter-spacing: 40px;
+	color: white;
+	overflow: hidden;
+}
+
+.tripleImage {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    height: 550px;
+}
+
+.shape {
+    background: url('assets/images/rainforest.jpg') no-repeat;
+    background-size: 900px 500px;
+    border-radius: 5px;
+}
+
+/* When picking a new image, adjust the percentages according to the image */
+.tripleImageLeft {
+	width: 120px;
+    height: 370px;
+    background-position: 37% 30%;
+}
+.tripleImageCenter {
+	width: 130px;
+    height: 450px;
+    background-position: 54% 0;
+}
+.tripleImageRight {
+	width: 120px;
+    height: 370px;
+    background-position: 71% 35%;
+}
