@@ -7,13 +7,35 @@
 	<link rel="stylesheet" href="pageStyle.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Marcellus&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9bfb53fa6b.js" crossorigin="anonymous"></script>
+	<script>
+        function copyText(element) {
+            const text = element.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+            }).catch(err => {
+                console.error("Failed to copy text: ", err);
+            });
+        }
+    </script>
+    <script>
+    	function updateClock(){
+    		let options = {timeZone: "America/Los_Angeles", hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit'};
+    		let formatter = new Intl.DateTimeFormat('en-us', options);
+    		document.getElementById("liveClock").textContent = formatter.format(new Date());
+    	}
+
+    	setInterval(updateClock, 200);
+
+    	updateClock();
+    </script>
 </head>
 <body>
-	
+
 	<h1 class="title">CONTACT</h1>
 	
 	<div class="headerBar">
+
 		<a class="link" href="../index.html">home</a>
 		<a class="link" href="about.html">about</a>
 		<a class="link" href="projects.html">projects</a>
@@ -21,9 +43,31 @@
 		<a class="link" href="updates.html">updates</a>
 		<a class="link" href="archive2025.html">archive</a>
 		<a class="link" href="notes.html">notes</a>
+	
 	</div>
 
-	<p class="comingSoon">working on it...</p>
+	<div id="contact">
 
+		<div class="contentscentered">
+
+			<div style="margin-top: 2vw; display: flex; flex-flow: column; align-items: center;">
+				<p class="text2">Local Time</p>
+
+				<p id="liveClock">00:00:00 --</p>
+			</div>
+
+			<p class="header2">GENERAL</p>
+				<p class="text2"><i class="fa-solid fa-phone"></i> Phone Number: <a onclick="copyText(this)" class="link text2">425 553 5000</a></p>
+				<p class="text2"><i class="fa-solid fa-envelope"></i> Email: <a onclick="copyText(this)" class="link text2">johnathinfooks@gmail.com</a></p>
+			
+			<p class="header2">MEDIA</p>
+				<a href="https://github.com/johnathinfooks" target="_blank" class="link text2"><i class="fa-brands fa-github"></i> Github</a><br>
+				<a href="https://www.instagram.com/iamjohnathin/" target="_blank" class="link text2"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+				<a href="https://www.youtube.com/@drethis478" target="_blank" class="link text2"><i class="fa-brands fa-youtube"></i> YouTube</a><br>
+
+		</div>
+
+	</div>
+<br><br><br><br><br><br>
 </body>
 </html>

@@ -21,6 +21,12 @@ body{
 	color: red;
 	font-size: 1vw;
 }
+#liveClock{
+	font-family: "JetBrains Mono";
+	font-weight: bold;
+	color: red;
+	font-size: 1vw;
+}
 
 .link{
 	color: #7d7d7d;
@@ -63,7 +69,13 @@ body{
 	width: 70vw;
 	margin-left: 2vw;
 	margin-right: 2vw;
-
+}
+.contentscentered{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-left: 2vw;
+	margin-right: 2vw;
 }
 
 .header{
@@ -73,10 +85,23 @@ body{
 	letter-spacing: .6vw;
 	margin-top: 4vw;
 }
+.header2{
+	color: black;
+	font-weight: bold;
+	font-family: "Nunito";
+	font-size: 2vw;
+	letter-spacing: .6vw;
+	margin-top: 4vw;
+}
 
 .text{
 	overflow-wrap: break-word;
 	font-size: 1vw;
+	font-family: "Arial"
+}
+.text2{
+	overflow-wrap: break-word;
+	font-size: 1.1vw;
 	font-family: "Arial"
 }
 
