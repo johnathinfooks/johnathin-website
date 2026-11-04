@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("assets/SourceCodePro-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("assets/SourceCodePro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+h3 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+h4, h5, h6 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 700;
+    font-size: 17;
+}
+
+#profile {
+    padding-bottom: 24px;
+}
+
+#projects {
+    padding-bottom: 24px;
+}
+
+#academics {
+    padding-bottom: 24px;
+}
+
+#class-collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+#class-collection .class-column {
+    flex: 0 0 380px;
+}
+
+#class-collection h4 {
+    margin: 0 0 8px;
+}
+
+#class-collection ul {
+    margin: 0;
+    padding-left: 24px;
+}
